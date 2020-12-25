@@ -2,6 +2,7 @@ const sessionURL = "sessions.json";
 
 let sessionList = [];
 
+// export default function getSessions() {
 function getSessions() {
   return new Promise(function (resolve, reject) {
     var oReq = new XMLHttpRequest();
@@ -15,4 +16,4 @@ function getSessions() {
   });
 }
 
-export { getSessions };
+export { getSessions as default, sessionURL };
