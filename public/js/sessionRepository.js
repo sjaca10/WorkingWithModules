@@ -17,3 +17,4 @@ function getSessions() {
 }
 
 export { getSessions as default, sessionURL };
+export { sessionTemplate } from './template.js'
