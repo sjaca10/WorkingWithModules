@@ -1,7 +1,7 @@
 const errorMessage =
   "<p><em>You do not have any list items yet. Try adding one with the form above.</em></p>";
 
-function applyTempate() {
+function applyTempate(item) {
   return `<div class="col-xs-12 col-sm-4 col-md-4 adj_text">
     <h3>${item.title}</h3>
     <p>${item.tagline}</p>
@@ -20,4 +20,4 @@ function sessionTemplate(sessions) {
   return "" + sessions.map(applyTempate).join("") + "";
 }
 
-export { errorMessage, sessionTemplate }
+export { errorMessage, sessionTemplate as default }
